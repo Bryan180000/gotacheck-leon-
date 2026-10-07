@@ -11,16 +11,16 @@
 
     <div class="login-split-layout">
         
-        <!-- COLUMNA IZQUIERDA: FORMULARIO -->
+        
         <div class="login-left">
             
             <div class="login-box">
-                <!-- Botón de regreso integrado dentro de la tarjeta -->
+               
                 <a href="index.html" class="btn-volver">
                     <span class="material-symbols-outlined">arrow_back</span> Volver al inicio
                 </a>
 
-                <!-- Encabezado con Logo (Sin texto duplicado) -->
+               
                 <div class="login-header">
                     <a href="index.html" class="logo-container" style="justify-content: center; margin-bottom: 1rem;">
                         <img src="imagenes/logo-gotacheck.png" alt="Logo GotaCheck" class="logo-img" style="height: 50px;" onerror="this.src='https://via.placeholder.com/50/0d6efd/ffffff?text=GC'">
@@ -29,18 +29,18 @@
                     <p>Ingresa a tu cuenta para consultar el servicio de agua.</p>
                 </div>
 
-                <!-- Pestañas -->
+                
                 <div class="tabs-container">
                     <button class="tab-btn active" id="btn-tab-login" onclick="mostrarTab('login')">Iniciar sesión</button>
                     <button class="tab-btn" id="btn-tab-registro" onclick="mostrarTab('registro')">Registrarse</button>
                 </div>
 
-                <!-- SECCIÓN: INICIAR SESIÓN -->
+               
                 <div id="seccion-login" class="form-seccion active">
                     
                     <p style="font-size: 0.9rem; color: var(--color-texto-mutado); margin-bottom: 0.8rem;">Selecciona tu perfil de usuario e ingresa tus datos:</p>
                     
-                    <!-- LOS 4 ROLES DE USUARIO -->
+                    
                     <div class="perfil-selector" style="margin-bottom: 1.5rem;">
                         <div class="perfil-card selected" id="card-ciudadano" onclick="seleccionarPerfil('ciudadano', 'dashboard-ciudadano.html')">
                             <span class="material-symbols-outlined" style="font-size: 1.5rem; margin-bottom: 0.2rem;">person</span>
@@ -87,7 +87,7 @@
                     </form>
                 </div>
 
-                <!-- SECCIÓN: REGISTRO -->
+                
                 <div id="seccion-registro" class="form-seccion">
                     <form action="dashboard-ciudadano.html" method="GET">
                         <div class="form-group">
@@ -114,13 +114,13 @@
 
             </div>
             
-            <!-- Pie de página integrado en la columna izquierda -->
+            
             <div style="position: absolute; bottom: 1rem; text-align: center; width: 100%; font-size: 0.8rem; color: var(--color-texto-mutado);">
                 &copy; 2026 GotaCheck León - Desarrollado por Oswaldo Alfredo Gomez Ríos (UTL)
             </div>
         </div>
 
-        <!-- COLUMNA DERECHA: BANNER / IMAGEN -->
+       
         <div class="login-right">
             <div class="login-banner-content">
                 <img src="imagenes/banner-login.png" alt="Ilustración León" style="max-width: 80%; margin-bottom: 2rem;" onerror="this.src='https://via.placeholder.com/400/ffffff/1a73e8?text=Banner+Leon'">
@@ -131,7 +131,7 @@
 
     </div>
 
-    <!-- SCRIPT PARA PESTAÑAS Y ROLES -->
+    
     <script>
         function seleccionarPerfil(rol, destinoDashboard) {
             document.querySelectorAll('.perfil-card').forEach(card => card.classList.remove('selected'));
