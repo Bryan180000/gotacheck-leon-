@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GotaCheck - Panel Técnico de Campo</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <header>
+    <div class="navbar">
+        <a href="index.html" class="logo-container">
+            <img src="imagenes/logo-gotacheck.png" alt="Logo GotaCheck" class="logo-img" onerror="this.src='https://via.placeholder.com/42/0d6efd/ffffff?text=GC'">
+            <div class="logo-texto">GotaCheck <span>León</span></div>
+        </a>
+        <nav class="nav-menu">
+            <!-- Botón Inicio agregado en la barra superior -->
+            <a href="index.html" class="btn-menu btn-outline"><span class="material-symbols-outlined">home</span> Inicio</a>
+            <a href="login.html" class="btn-menu btn-primario">Cerrar Sesión</a>
+        </nav>
+    </div>
+</header>
+
+    <main>
+        <div class="card" style="display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
+            <!-- AGREGAR IMAGEN AQUÍ: imagenes/avatar-tecnico.png -->
+            <img src="imagenes/avatar-tecnico.png" alt="Foto Técnico" style="width: 70px; height: 70px; border-radius: 50%;" onerror="this.src='https://via.placeholder.com/70/198754/ffffff?text=TEC'">
+            <div>
+                <h2>Cuadrilla #04 - León Norte</h2>
+                <p>Responsable: <strong>Bryan Hernández</strong> | Estado: <span class="badge badge-resuelto">En Ruta de Atención</span></p>
+            </div>
+        </div>
+
+        <section class="card">
+            <div class="card-header">
+                <h3>Órdenes de Trabajo Asignadas para Hoy</h3>
+            </div>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Folio</th>
+                            <th>Ubicación</th>
+                            <th>Prioridad</th>
+                            <th>Acción / Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#FG-1042</td>
+                            <td>Calle Nezahualcóyotl #204, Valle de Señora</td>
+                            <td><span class="badge badge-pendiente">Alta</span></td>
+                            <td>
+                                <button class="btn-menu btn-primario" style="padding: 0.3rem 0.6rem; font-size: 0.85rem;">Iniciar Reparación</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#FG-1038</td>
+                            <td>Blvd. Madrazo #1209</td>
+                            <td><span class="badge badge-proceso">Media</span></td>
+                            <td>
+                                <button class="btn-menu btn-alerta" style="padding: 0.3rem 0.6rem; font-size: 0.85rem;">Finalizar y Subir Evidencia</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="card">
+            <h3>Evidencia de Reparación Reciente</h3>
+            <!-- AGREGAR IMAGEN AQUÍ: imagenes/fuga-ejemplo.jpg -->
+            <p style="margin-top: 0.5rem;">Carga la foto del trabajo concluido para cerrar la orden de trabajo ante el supervisor:</p>
+            <div style="margin-top: 1rem;">
+                <input type="file" class="form-control" style="margin-bottom: 0.5rem;">
+                <button class="btn-menu btn-primario">Guardar Avance de Campo</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 GotaCheck León - Módulo Operativo de Campo</p>
+    </footer>
+</body>
+</html>

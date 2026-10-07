@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GotaCheck León - Monitoreo de Tandeo y Reporte de Fugas</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <!-- 1. Logo a la izquierda -->
+            <a href="index.html" class="logo-container">
+                <img src="imagenes/logo-gotacheck.png" alt="Logo GotaCheck" class="logo-img" onerror="this.src='https://via.placeholder.com/42/0d6efd/ffffff?text=GC'">
+            </a>
+            
+            <!-- 2. Enlaces de navegación al centro -->
+            <nav class="nav-links">
+                <a href="index.html" class="active">Inicio</a>
+                <a href="#como-funciona">¿Cómo funciona?</a>
+                <a href="#sobre-nosotros">Sobre nosotros</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+            <!-- 3. Botones de acción a la derecha -->
+            <div class="nav-botones">
+                <a href="login.html" class="btn-menu btn-outline">Iniciar Sesión</a>
+                <a href="login.html#registro" class="btn-menu btn-primario">Registrarse</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Conoce el estado del agua en tu colonia al instante</h1>
+                <p>Monitorea los días de servicio de agua (tandeo) en León, Guanajuato y contribuye reportando fugas en la vía pública para cuidar nuestro recurso.</p>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <a href="login.html" class="btn-menu btn-primario"><span class="material-symbols-outlined">search</span> Consultar Mi Colonia</a>
+                    <a href="nuevo-reporte.html" class="btn-menu btn-alerta"><span class="material-symbols-outlined">report_problem</span> Reportar una Fuga</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- AGREGAR IMAGEN AQUÍ: imagenes/hero-leon.jpg -->
+                <img src="imagenes/hero-leon.jpg" alt="Agua y cuidado del recurso en León Guanajuato" onerror="this.src='https://via.placeholder.com/500x320/003366/ffffff?text=GotaCheck+Le%C3%B3n+Agua'">
+            </div>
+        </section>
+
+        <!-- SECCIÓN 1: ¿CÓMO FUNCIONA? -->
+        <section id="como-funciona" class="card seccion-informativa">
+            <div class="card-header">
+                <h2>¿Cómo funciona GotaCheck?</h2>
+            </div>
+            <p>Debido al estrés hídrico regional en León, el agua se distribuye por sectores. Nuestra plataforma simplifica tu día a día en tres pasos:</p>
+            <div class="grid-3-cols">
+                <div class="info-box">
+                    <span class="material-symbols-outlined">calendar_month</span>
+                    <h3>1. Consulta tu Colonia</h3>
+                    <p>Revisa rápidamente qué días exactos tendrás servicio de agua y planifica tus actividades.</p>
+                </div>
+                <div class="info-box">
+                    <span class="material-symbols-outlined">report_problem</span>
+                    <h3>2. Reporta Fugas</h3>
+                    <p>Si ves una fuga en la calle, levanta un reporte con foto y ubicación desde tu celular.</p>
+                </div>
+                <div class="info-box">
+                    <span class="material-symbols-outlined">engineering</span>
+                    <h3>3. Atención Rápida</h3>
+                    <p>Las cuadrillas de SAPAL reciben la alerta en tiempo real para reparar el problema sin desperdiciar agua.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: SOBRE NOSOTROS -->
+        <section id="sobre-nosotros" class="card seccion-informativa">
+            <div class="card-header">
+                <h2>Sobre Nosotros</h2>
+            </div>
+            <p>Somos un equipo apasionado de estudiantes de la <strong>Universidad Tecnológica de León (UTL)</strong>, de la carrera de Ingeniería en Tecnologías de la Información e Innovación Digital. </p>
+            <p style="margin-top: 1rem;">Nació como un proyecto para la asignatura de Desarrollo de Aplicaciones Web, pero nuestro objetivo con <strong>GotaCheck León</strong> es real: aplicar la tecnología para resolver el problema del agua en nuestra ciudad, empoderando a la ciudadanía y apoyando a las autoridades a ser más eficientes.</p>
+        </section>
+
+        <!-- SECCIÓN 3: CONTACTO -->
+        <section id="contacto" class="card seccion-informativa">
+            <div class="card-header">
+                <h2>Contáctanos</h2>
+            </div>
+            <p>¿Tienes dudas, sugerencias o quieres integrar tu colonia al sistema? Escríbenos y nuestro equipo te responderá pronto.</p>
+            
+            <form class="formulario-contacto" style="margin-top: 1.5rem; max-width: 600px;">
+                <div class="form-group">
+                    <label for="nombre-contacto">Nombre Completo:</label>
+                    <input type="text" id="nombre-contacto" class="form-control" placeholder="Ej. Ana Pérez" required>
+                </div>
+                <div class="form-group">
+                    <label for="email-contacto">Correo Electrónico:</label>
+                    <input type="email" id="email-contacto" class="form-control" placeholder="tu@correo.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje-contacto">Tu Mensaje:</label>
+                    <textarea id="mensaje-contacto" class="form-control" rows="4" placeholder="Escribe tus comentarios aquí..." required></textarea>
+                </div>
+                <!-- El alert simula el envío para que el prototipo se vea funcional -->
+                <button type="button" class="btn-menu btn-primario" onclick="alert('¡Gracias por escribirnos! Hemos recibido tu mensaje.')">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 GotaCheck León - Universidad Tecnológica de León (UTL)</p>
+        <p>Asignatura: Aplicaciones Web | Equipo LDSM404</p>
+    </footer>
+</body>
+</html>

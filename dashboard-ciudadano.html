@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GotaCheck - Panel Ciudadano</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <header>
+    <div class="navbar">
+        <a href="index.html" class="logo-container">
+            <img src="imagenes/logo-gotacheck.png" alt="Logo GotaCheck" class="logo-img" onerror="this.src='https://via.placeholder.com/42/0d6efd/ffffff?text=GC'">
+            <div class="logo-texto">GotaCheck <span>León</span></div>
+        </a>
+        <nav class="nav-menu">
+            <!-- Botón Inicio agregado en la barra superior -->
+            <a href="index.html" class="btn-menu btn-outline"><span class="material-symbols-outlined">home</span> Inicio</a>
+            <a href="login.html" class="btn-menu btn-primario">Cerrar Sesión</a>
+        </nav>
+    </div>
+</header>
+
+    <main>
+        <div class="card" style="display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
+            <!-- AGREGAR IMAGEN AQUÍ: imagenes/avatar-ciudadano.png -->
+            <img src="imagenes/avatar-ciudadano.png" alt="Foto Ciudadano" style="width: 70px; height: 70px; border-radius: 50%;" onerror="this.src='https://via.placeholder.com/70/0d6efd/ffffff?text=User'">
+            <div>
+                <h2>Bienvenido, Kevin Ernesto Álvarez</h2>
+                <p>Colonia registrada: <strong>Valle de Señora, León, Gto.</strong></p>
+            </div>
+        </div>
+
+        <section class="card">
+            <div class="card-header">
+                <h3>Consulta de Calendario de Tandeo</h3>
+            </div>
+            <div class="form-group">
+                <label for="colonia">Buscar colonia en León:</label>
+                <select id="colonia" class="form-control">
+                    <option selected>Valle de Señora</option>
+                    <option>Jardines de Jeréz</option>
+                    <option>Cerrito de Jerez</option>
+                    <option>El Coecillo</option>
+                    <option>León II</option>
+                </select>
+            </div>
+            <h4>Estatus para Valle de Señora esta semana:</h4>
+            <div class="tandeo-dias">
+                <div class="dia-box activo">Lun<span class="estado">Sí hay</span></div>
+                <div class="dia-box">Mar<span class="estado">Sin agua</span></div>
+                <div class="dia-box activo">Mié<span class="estado">Sí hay</span></div>
+                <div class="dia-box">Jue<span class="estado">Sin agua</span></div>
+                <div class="dia-box activo">Vie<span class="estado">Sí hay</span></div>
+                <div class="dia-box">Sáb<span class="estado">Sin agua</span></div>
+                <div class="dia-box activo">Dom<span class="estado">Sí hay</span></div>
+            </div>
+        </section>
+
+        <section class="card">
+            <div class="card-header">
+                <h3>Mis Reportes Ciudadanos Enviados</h3>
+            </div>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Folio</th>
+                            <th>Ubicación / Calle</th>
+                            <th>Fecha</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#FG-1042</td>
+                            <td>Calle Nezahualcóyotl #204</td>
+                            <td>06/10/2026</td>
+                            <td><span class="badge badge-pendiente">En Revisión</span></td>
+                        </tr>
+                        <tr>
+                            <td>#FG-0891</td>
+                            <td>Av. Minerva esq. López Mateos</td>
+                            <td>28/09/2026</td>
+                            <td><span class="badge badge-resuelto">Atendido / Reparado</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 GotaCheck León - Módulo Ciudadano</p>
+    </footer>
+</body>
+</html>

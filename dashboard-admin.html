@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GotaCheck - Administración Global</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <header>
+    <div class="navbar">
+        <a href="index.html" class="logo-container">
+            <img src="imagenes/logo-gotacheck.png" alt="Logo GotaCheck" class="logo-img" onerror="this.src='https://via.placeholder.com/42/0d6efd/ffffff?text=GC'">
+            <div class="logo-texto">GotaCheck <span>León</span></div>
+        </a>
+        <nav class="nav-menu">
+            <!-- Botón Inicio agregado en la barra superior -->
+            <a href="index.html" class="btn-menu btn-outline"><span class="material-symbols-outlined">home</span> Inicio</a>
+            <a href="login.html" class="btn-menu btn-primario">Cerrar Sesión</a>
+        </nav>
+    </div>
+</header>
+    <main>
+        <div class="card" style="display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
+            <!-- AGREGAR IMAGEN AQUÍ: imagenes/avatar-admin.png -->
+            <img src="imagenes/avatar-admin.png" alt="Foto Admin" style="width: 70px; height: 70px; border-radius: 50%;" onerror="this.src='https://via.placeholder.com/70/003366/ffffff?text=ADM'">
+            <div>
+                <h2>Administrador General: Ángel López</h2>
+                <p>Nivel de Acceso: <strong>Superusuario / Control Total</strong></p>
+            </div>
+        </div>
+
+        <section class="card">
+            <div class="card-header">
+                <h3>Gestión General de Usuarios y Asignación de Roles</h3>
+            </div>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre Completo</th>
+                            <th>Correo</th>
+                            <th>Rol Asignado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#USR-01</td>
+                            <td>Kevin Ernesto Álvarez</td>
+                            <td>kevin@utleon.edu.mx</td>
+                            <td><span class="badge badge-rol">Ciudadano</span></td>
+                            <td><button class="btn-menu btn-outline" style="padding: 0.2rem 0.5rem; font-size: 0.8rem;">Editar Rol</button></td>
+                        </tr>
+                        <tr>
+                            <td>#USR-02</td>
+                            <td>Bryan Hernández</td>
+                            <td>bryan@sapal.gob.mx</td>
+                            <td><span class="badge badge-rol">Técnico Campo</span></td>
+                            <td><button class="btn-menu btn-outline" style="padding: 0.2rem 0.5rem; font-size: 0.8rem;">Editar Rol</button></td>
+                        </tr>
+                        <tr>
+                            <td>#USR-03</td>
+                            <td>Oswaldo Gómez</td>
+                            <td>oswaldo@sapal.gob.mx</td>
+                            <td><span class="badge badge-rol">Supervisor</span></td>
+                            <td><button class="btn-menu btn-outline" style="padding: 0.2rem 0.5rem; font-size: 0.8rem;">Editar Rol</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 GotaCheck León - Panel de Administración del Sistema</p>
+    </footer>
+</body>
+</html>

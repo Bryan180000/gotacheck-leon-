@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GotaCheck - Registrar Fuga de Agua</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logo-container">
+                <img src="imagenes/logo-gotacheck.png" alt="Logo GotaCheck" class="logo-img" onerror="this.src='https://via.placeholder.com/42/0d6efd/ffffff?text=GC'">
+                <div class="logo-texto">GotaCheck <span>León</span></div>
+            </a>
+            <nav class="nav-menu">
+                <a href="dashboard-ciudadano.html">Volver a Mi Panel</a>
+            </nav>
+        </div>
+    </header>
+
+    <main style="max-width: 750px;">
+        <section class="card">
+            <div class="card-header">
+                <h2>Registrar Reporte de Fuga de Agua</h2>
+            </div>
+            <form action="dashboard-ciudadano.html" method="GET">
+                <div class="form-group">
+                    <label for="colonia-fuga">Colonia:</label>
+                    <select id="colonia-fuga" class="form-control" required>
+                        <option value="">Selecciona la colonia...</option>
+                        <option>Valle de Señora</option>
+                        <option>Centro Histórico</option>
+                        <option>Jardines de Jerez</option>
+                        <option>San Miguel</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="calle">Calle y Número / Referencias:</label>
+                    <input type="text" id="calle" class="form-control" placeholder="Ej. Calle Tauro esquina con Blvd. Hilario Medina" required>
+                </div>
+                <div class="form-group">
+                    <label for="tipo">Gravedad / Intensidad de la fuga:</label>
+                    <select id="tipo" class="form-control">
+                        <option>Moderada (Goteo constante / brote en banqueta)</option>
+                        <option>Alta (Brote de agua a presión en arroyo vehicular)</option>
+                        <option>Urgente (Afectación a viviendas / banqueta levantada)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Descripción de los hechos:</label>
+                    <textarea id="descripcion" rows="4" class="form-control" placeholder="Describe brevemente el problema observando la fuga..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="foto">Fotografía de la fuga (Opcional):</label>
+                    <!-- AGREGAR IMAGEN DE MUESTRA O CARGA AQUÍ -->
+                    <input type="file" id="foto" class="form-control">
+                </div>
+                <button type="submit" class="btn-menu btn-alerta" style="width: 100%; justify-content: center; padding: 0.9rem;">
+                    Enviar Reporte a SAPAL / Cuadrilla
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 GotaCheck León - Formulario de Reportes Ciudadanos</p>
+    </footer>
+</body>
+</html>
