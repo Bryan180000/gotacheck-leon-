@@ -1,6 +1,4 @@
-/* ===================================================
-   GOTACHECK LEÓN - HOJA DE ESTILOS GENERAL COMPLETA
-   =================================================== */
+
 
 :root {
     --color-primario: #0d6efd;
@@ -40,9 +38,7 @@ body {
     min-height: 100vh;
 }
 
-/* ===================================================
-   ENCABEZADO Y NAVEGACIÓN (DISEÑO FIGMA)
-   =================================================== */
+
 header {
     background-color: var(--color-tarjeta);
     box-shadow: var(--sombra-suave);
@@ -133,9 +129,7 @@ nav.nav-menu a:hover, nav.nav-menu a.active {
     background-color: rgba(13, 110, 253, 0.08);
 }
 
-/* ===================================================
-   BOTONES GLOBALES
-   =================================================== */
+
 .btn-menu {
     padding: 0.6rem 1.2rem;
     border-radius: 8px;
@@ -178,9 +172,7 @@ nav.nav-menu a:hover, nav.nav-menu a.active {
     color: white !important;
 }
 
-/* ===================================================
-   ESTRUCTURA PRINCIPAL Y CONTENEDORES
-   =================================================== */
+
 main {
     flex: 1;
     width: 100%;
@@ -236,9 +228,7 @@ main {
     object-fit: contain;
 }
 
-/* ===================================================
-   SECCIONES INFORMATIVAS Y TARJETAS
-   =================================================== */
+
 .seccion-informativa {
     scroll-margin-top: 100px; 
 }
@@ -307,9 +297,7 @@ main {
     font-size: 1.3rem;
 }
 
-/* ===================================================
-   CALENDARIO DE TANDEO (DÍAS DE LA SEMANA)
-   =================================================== */
+
 .tandeo-dias {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -337,9 +325,7 @@ main {
     margin-top: 4px;
 }
 
-/* ===================================================
-   FORMULARIOS Y TABLAS
-   =================================================== */
+
 .form-group {
     margin-bottom: 1.2rem;
 }
@@ -404,9 +390,7 @@ table th {
 .badge-resuelto { background-color: #d4edda; color: #155724; }
 .badge-rol { background-color: #e2e3e5; color: #383d41; }
 
-/* ===================================================
-   DISEÑO SPLIT-SCREEN PARA PANTALLA DE LOGIN
-   =================================================== */
+
 .body-login {
     margin: 0;
     padding: 0;
@@ -516,7 +500,7 @@ table th {
     text-decoration: none;
 }
 
-/* BOTÓN VOLVER */
+
 .btn-volver {
     display: inline-flex;
     align-items: center;
@@ -600,9 +584,7 @@ table th {
     margin-bottom: 0.5rem;
 }
 
-/* ===================================================
-   FOOTER GENERAL
-   =================================================== */
+
 footer {
     background-color: var(--color-secundario);
     color: white;
@@ -616,11 +598,9 @@ footer a {
     text-decoration: none;
 }
 
-/* ===================================================
-   MEDIA QUERIES - RESPONSIVIDAD (Móvil, Tablet, Desktop)
-   =================================================== */
 
-/* Dispositivos Móviles (< 768px) */
+
+
 @media screen and (max-width: 767px) {
     .navbar {
         flex-direction: column;
@@ -665,7 +645,7 @@ footer a {
     }
 }
 
-/* Tabletas (768px a 991px) */
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .hero-section {
         grid-template-columns: 1fr 1fr;
@@ -688,7 +668,7 @@ footer a {
     }
 }
 
-/* Equipos de escritorio (>= 992px) */
+
 @media only screen and (min-width: 992px) {
     .hero-section {
         grid-template-columns: 1.2fr 0.8fr;
